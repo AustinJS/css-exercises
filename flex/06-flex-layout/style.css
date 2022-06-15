@@ -8,8 +8,6 @@ body {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-
 }
 
 img {
@@ -21,6 +19,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  padding: 6px 12px;
 }
 
 input {
@@ -41,22 +41,42 @@ input {
 .right-links {
   display: flex;
   padding: 0px;
+  margin: 6px;
 
 }
 
 .header .left-links li,
-.header .right-links li {
+.header .right-links li,
+.footer .left-links li,
+.footer .right-links li {
   padding: 12px;
   list-style-type: none;
   font-size: 12px;
 }
 
-img {
-  ;
-}
+
 
 .buttons {
   display: flex;
   justify-content: center;
+  gap: 4px;
   
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+}
+
+a {
+  text-decoration: none;
 }
